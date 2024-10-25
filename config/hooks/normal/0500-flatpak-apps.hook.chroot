@@ -1,0 +1,24 @@
+#!/bin/sh
+set -e
+
+#flatpak install -y --noninteractive --from https://flathub.org/repo/appstream/net.openra.OpenRA.flatpakref
+
+#flatpak install -y --noninteractive flathub io.openrct2.OpenRCT2
+
+#flatpak install -y --noninteractive flathub org.srb2.SRB2Kart
+
+#flatpak install -y --noninteractive flathub uk.co.powdertoy.tpt
+
+#flatpak install -y --noninteractive flathub org.alienarena.alienarena
+
+#flatpak install -y --noninteractive flathub de.billardgl.Billardgl
+
+#flatpak install -y --noninteractive flathub com.github.bjaraujo.Bombermaaan
+
+
+apt-get install snapd
+systemctl enable --now snapd
+systemctl start snapd
+snap install snapd
+snap install openra
+
